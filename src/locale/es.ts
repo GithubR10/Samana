@@ -44,12 +44,12 @@ const es = {
 
   // PROFILE
   portfolioSize: 'Tamaño del portafolio',
-  landInvestments: 'Invercion del terreno',
-  propertyInvestments: 'Invercion de la propiedad',
+  landInvestments: 'Inversión del terreno',
+  propertyInvestments: 'Inversión de la propiedad',
   owned: 'Adquirido',
   youAreNotAnNFTOwner: 'No eres propietario de ningún NFT',
   yourPortfolio: 'Mi portafolio',
-  myInvestment: 'MI INVERCION',
+  myInvestment: 'MI INVERSIÓN',
   myLand: 'Mi terreno',
   buyLand: 'Comprar terreno',
 };

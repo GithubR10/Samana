@@ -57,11 +57,13 @@ const HomeCard = ({
         </div>
         <div className='mt-1 flex justify-between'>
           <div>
-            <p className='text-xl font-bold'>${soldTokens}</p>
+            <p className='text-xl font-bold'>${soldTokens.toLocaleString()}</p>
             <p className='text-xs opacity-60'>{t.sold}</p>
           </div>
           <div>
-            <p className='text-right text-xl font-bold'>${totalTokens}</p>
+            <p className='text-right text-xl font-bold'>
+              ${totalTokens.toLocaleString()}
+            </p>
             <p className='text-right text-xs opacity-60'>{t.total}</p>
           </div>
         </div>

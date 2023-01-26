@@ -375,12 +375,7 @@ export default function Index() {
             {t.investmentProperty}
           </div>
           <div className='mt-1 text-3xl font-bold'>
-            {
-              metadata.attributes.find(
-                (it) =>
-                  it.trait_type === 'Valuation of construction at completion'
-              )?.value
-            }
+            ${maxSupply?.toNumber().toLocaleString()}
           </div>
           {bought && maxSupply && (
             <>
@@ -391,12 +386,14 @@ export default function Index() {
               </div>
               <div className='mt-1 flex justify-between'>
                 <div>
-                  <p className='text-xl font-bold'>${bought.toString()}</p>
+                  <p className='text-xl font-bold'>
+                    ${bought.toNumber().toLocaleString()}
+                  </p>
                   <p className='text-xs opacity-60'>{t.sold}</p>
                 </div>
                 <div>
                   <p className='text-right text-xl font-bold'>
-                    ${maxSupply.toString()}
+                    ${maxSupply.toNumber().toLocaleString()}
                   </p>
                   <p className='text-right text-xs opacity-60'>{t.total}</p>
                 </div>
